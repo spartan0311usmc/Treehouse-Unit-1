@@ -1,0 +1,356 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: rgb(14, 13, 13);
+  
+}
+h2 {
+  text-align: center;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  color: rgb(236, 174, 59);
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+header {
+  text-align: center;
+  background: url('images/colorful-code.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 0.7;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  border: 3px solid rgb(236, 174, 59);
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.4) rotate(7deg);
+}
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+.location {
+  background-color: #222;
+  color: rgb(236, 174, 59);
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: rgb(204, 198, 198);
+  border-bottom: 4px solid #ccc;
+  border-radius: 12px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: rgb(236, 174, 59);
+}
+div.card.hobbies {
+  max-width: 1500px;
+
+} 
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 12px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #4dc73c;
+}
+.goals li {
+  border-radius: 12px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+
+}
+ul.goals {
+padding: 0;
+text-align: center;
+
+}
+.goals li:nth-child(5) {
+  background: #4dc73c;
+
+}
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+  
+  
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+  
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  
+
+}
+/* Contact form style */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-stretch:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:rgb(0, 0, 0);
+}
+
+.container {
+	max-width:700px;
+	width:100%;
+	margin:0 auto;
+  position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+  margin:50px 0;
+  border-radius: 15px;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:rgb(38, 190, 45);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+  font-size:15px;
+  border-radius: 15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:rgb(28, 131, 33);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
