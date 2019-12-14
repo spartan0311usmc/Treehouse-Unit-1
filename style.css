@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 /* Global Layout Set-up */
 * { 
   box-sizing: border-box;
@@ -80,6 +81,13 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.4) rotate(7deg);
 }
+.flex-image {
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;;
+  border: 3px solid rgb(236, 174, 59);
+
+}
 .tag {
   background-color: #efefef;
   color: black;
@@ -105,10 +113,15 @@ header .profile-image:hover {
 .card:hover {
   border-color: rgb(236, 174, 59);
 }
-div.card.hobbies {
+article.card.hobbies {
   max-width: 1500px;
+  height: min-content;
 
 } 
+.card-images {
+  object-fit: cover;
+
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -234,7 +247,6 @@ a.social:hover {
 
 }
 /* Contact form style */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 * {
 	margin:0;
